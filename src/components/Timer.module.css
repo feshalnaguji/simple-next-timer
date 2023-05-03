@@ -1,0 +1,36 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.label {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+
+.label:hover {
+  transform: translateY(-2px) scale(1.1);
+}
+
+.btn {
+  color: #090909;
+  padding: 0.3rem 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 5px 5px 10px #c5c5c5, -5px -5px 10px #ffffff;
+  margin-bottom: 1rem;
+}
+
+.btn:hover {
+  border: 1px solid white;
+}
+
+.btn:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}

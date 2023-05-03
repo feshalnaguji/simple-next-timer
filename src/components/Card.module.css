@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 2px 4px black; */
+  margin: 1rem;
+  padding: 1rem;
+  height: 10rem;
+  width: 12rem;
+  border-radius: 40px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #cccccc, -5px -5px 10px #f4f4f4;
+}
