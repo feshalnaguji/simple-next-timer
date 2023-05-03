@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "./Card";
 import classes from "./Timer.module.css";
 
@@ -29,7 +29,7 @@ const Timer = (props) => {
     setIsRunning(false);
   };
 
-  let day = String(Math.floor((timer / (60 * 60 * 24)) % 30)).padStart(2, "0");
+  let day = String(Math.floor(timer / (60 * 60 * 24))).padStart(2, "0");
   let hour = String(Math.floor((timer / 3600) % 24)).padStart(2, "0");
   let minutes = String(Math.floor((timer / 60) % 60)).padStart(2, "0");
   let seconds = String(Math.floor(timer % 60)).padStart(2, "0");
