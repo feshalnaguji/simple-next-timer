@@ -6,7 +6,7 @@ const TimerPage = ({ timer }) => {
 
 export default TimerPage;
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
   return {
     paths: [
       {
@@ -14,15 +14,22 @@ export function getStaticPaths() {
           timer: "1",
         },
       },
+      {
+        params: {
+          timer: "1000",
+        },
+      },
     ],
     fallback: "blocking",
   };
 }
 
-export function getStaticProps({ params }) {
+export async function getStaticProps({ params }) {
   return {
     props: {
       timer: params.timer,
     },
+
+    revalidate: 1,
   };
 }
