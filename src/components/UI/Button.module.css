@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  color: #090909;
+  padding: 0.3rem 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 5px 5px 10px #c5c5c5, -5px -5px 10px #ffffff;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  border: 1px solid white;
+  transform: scale(1.05) translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+  transform: scale(1.05) translateY(-1px);
+}
