@@ -13,7 +13,7 @@
   transition: all 0.3s;
   box-shadow: 5px 5px 10px #c5c5c5, -5px -5px 10px #ffffff;
   margin-bottom: 1rem;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 .btn:hover {
